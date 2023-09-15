@@ -1,6 +1,6 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2023-08-16 10:33:20",
+    "exportTime": "2023-09-13 11:08:40",
     "containerVersion": {
         "path": "accounts/6000780615/containers/135015321/versions/0",
         "accountId": "6000780615",
@@ -100,6 +100,57 @@
                 "type": "gaawc",
                 "parameter": [
                     {
+                        "type": "LIST",
+                        "key": "fieldsToSet",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "tag_name"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "GA4 - Configuration Tag"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "gtm_info"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Container ID}}, version ID:{{Container Version}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "page_variation_name"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "Variation {{instapage.PageVariant}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "type": "BOOLEAN",
                         "key": "sendPageView",
                         "value": "true"
@@ -115,7 +166,7 @@
                         "value": "{{GA4 Measurement ID}}"
                     }
                 ],
-                "fingerprint": "1690192230748",
+                "fingerprint": "1694602965899",
                 "firingTriggerId": [
                     "2147479553"
                 ],
@@ -177,6 +228,21 @@
                                         "value": "{{Click Element}}"
                                     }
                                 ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "page_variation_name"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "Variation {{instapage.PageVariant}}"
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -186,7 +252,7 @@
                         "value": "GA4 - Configuration Tag"
                     }
                 ],
-                "fingerprint": "1690524036445",
+                "fingerprint": "1694602909683",
                 "firingTriggerId": [
                     "11"
                 ],
@@ -233,6 +299,21 @@
                                         "value": "{{instapage.ClickText}} - Variant {{instapage.PageVariant}}"
                                     }
                                 ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "page_variation_name"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "Variation {{instapage.PageVariant}}"
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -242,7 +323,7 @@
                         "value": "GA4 - Configuration Tag"
                     }
                 ],
-                "fingerprint": "1690524044651",
+                "fingerprint": "1694602919472",
                 "firingTriggerId": [
                     "4"
                 ],
@@ -304,6 +385,21 @@
                                         "value": "{{Click Element}}"
                                     }
                                 ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "page_variation_name"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "Variation {{instapage.PageVariant}}"
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -313,7 +409,7 @@
                         "value": "GA4 - Configuration Tag"
                     }
                 ],
-                "fingerprint": "1690524052623",
+                "fingerprint": "1694602929252",
                 "firingTriggerId": [
                     "13"
                 ],
@@ -375,6 +471,21 @@
                                         "value": "{{Click Element}}"
                                     }
                                 ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "page_variation_name"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "Variation {{instapage.PageVariant}}"
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -384,7 +495,7 @@
                         "value": "GA4 - Configuration Tag"
                     }
                 ],
-                "fingerprint": "1690463608522",
+                "fingerprint": "1694602885508",
                 "firingTriggerId": [
                     "9"
                 ],
@@ -705,10 +816,10 @@
                     {
                         "type": "TEMPLATE",
                         "key": "value",
-                        "value": "G-Y2YV5PMYRH"
+                        "value": "G-XXXXXXXXXX"
                     }
                 ],
-                "fingerprint": "1690189989160",
+                "fingerprint": "1694603305987",
                 "formatValue": {}
             }
         ],
@@ -766,9 +877,21 @@
                 "containerId": "135015321",
                 "type": "FORM_TEXT",
                 "name": "Form Text"
+            },
+            {
+                "accountId": "6000780615",
+                "containerId": "135015321",
+                "type": "CONTAINER_VERSION",
+                "name": "Container Version"
+            },
+            {
+                "accountId": "6000780615",
+                "containerId": "135015321",
+                "type": "CONTAINER_ID",
+                "name": "Container ID"
             }
         ],
-        "fingerprint": "1692182000795",
+        "fingerprint": "1694603320937",
         "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6000780615/containers/135015321/versions/0?apiLink=version"
     }
 }
